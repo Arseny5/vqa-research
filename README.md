@@ -3,6 +3,32 @@ Binary answer to the question on the image
 
 ![image](qa_visual_logo.png)
 
+# Datasets
+
+We provide two datasets corresponding to the cities of Abakan and Omsk. For each of these datasets, there are two types of target values -- real travel time (considered in this study) and real length of trip. 
+
+<table>
+<tr><th>Road network</th><th>Trips</th></tr>
+<tr><td>
+
+| | Abakan | Omsk |
+|--|--|--|
+|Nodes| 65524 | 231688 |
+|Edges| 340012 |  1149492 |
+|Clustering| 0.5278 | 0.53 |
+|Usage median| 12 | 8 |
+ 
+</td><td>
+
+| | Abakan | Omsk |
+|--|--|--|
+|Trips number|  121557| 767343 |
+|Coverage| 53.3% |  49.5% |
+|Average time| 427 sec | 608 sec |
+|Average length| 3604 m | 4216 m |
+
+</td></tr> </table>
+
 # Prerequisites 
 
 **Backend:** please use *application/requirements.txt* in order to compile the environment for the application. 
