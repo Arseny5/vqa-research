@@ -17,6 +17,6 @@ Binary answer to the question on the image
 ```
 All other external libraries, which do not depend on `torch` and `CUDA` versions, are mentioned in `/model/requirements.txt`.
 
-# Contact us
+# Contact me
 
 If you have some questions about the code, you are welcome to open an issue, I will respond to that as soon as possible.
