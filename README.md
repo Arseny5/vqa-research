@@ -3,7 +3,7 @@ Binary answer to the question on the image
 
 ![image](qa_visual_logo.png)
 
-# Datasets
+# Dataset
 
 We provide two datasets corresponding to the cities of Abakan and Omsk. For each of these datasets, there are two types of target values -- real travel time (considered in this study) and real length of trip. 
 
