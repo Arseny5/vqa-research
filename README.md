@@ -1,6 +1,6 @@
 # vqa-research
 Binary answer to the question on the image
 
-![image](transformers.png)
+![image](visual_qa.png)
 
 Train-dataset consist of triplets: Picture, Question, Answer.
