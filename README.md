@@ -55,7 +55,7 @@ Example for launching with VILT model:
 ### TODO Roadmap
 - ✔️ Data processing and EDA
 - ✔️ Training module
-- ✔️ Inference module, metrcis - ROUGE, F1, Accuracy
+- ✔️ Inference module, metrics - ROUGE, F1, Accuracy
 - ✔️ Fine-tuned [VILT](https://arxiv.org/abs/2102.03334) model
 - ✔️ Fine-tuned [BLIP](https://arxiv.org/pdf/2201.12086.pdf) model
 - ✔️ Fine-tuned [BLIP2](https://arxiv.org/pdf/2301.12597.pdf) model
