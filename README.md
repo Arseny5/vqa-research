@@ -42,7 +42,7 @@ You can use the following commands to control the model settings:
 ### Quick test quide
 
 1) Please, install PyTorch and other libraries in your environment, you can use *requirements.txt*;
-2) unzip the [dataset](https://drive.google.com/drive/folders/1v4Vs26rlis1L1s4ye0lTMjyW07fXLg9T);
+2) unzip the dataset;
 4) check the paths' constants in `test.py`;
 5) launch test sctipt as `python test.py`, you can choose the training hyperparameters using argument-parser.
 
