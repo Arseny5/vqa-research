@@ -5,15 +5,15 @@ Binary answer to the question on the image
 
 # Prerequisites 
 
-**Backend:** please use *application/requirements.txt* in order to compile the environment for the application. 
+**Backend:** please use *requirements.txt* in order to compile the environment for the application. 
 
-**Model:** the experiments were conducted with `CUDA 10.1` and `torch 1.8.1`. The following libraries must be compatible with this software setup:
+**Model:** the experiments were conducted with `GPU A100 80GB`, `CUDA 11.2` and `torch 1.13.1`. The following libraries must be compatible with this software setup:
 ```
-- torch-cluster==1.6.0
-- torch-geometric==2.1.0.post1
-- torch-scatter==2.0.8
-- torch-sparse==0.6.12
-- torch-spline-conv==1.2.1
+- torch==1.13.1
+- torchvision==0.14.1
+- evaluate==0.4.0
+- rouge-metric==1.0.1
+- transformers==4.34.0
 ```
 All other external libraries, which do not depend on `torch` and `CUDA` versions, are mentioned in `requirements.txt`.
 
@@ -21,28 +21,25 @@ All other external libraries, which do not depend on `torch` and `CUDA` versions
 
 You can use the following commands to control the model settings:
 
-- `-e` -- number of epochs.
+- `--output-dir` -- overwrite output dir.
+- `--eval-strat` -- evaluation strategy for training: evaluate every eval_steps.
+- `--eval-steps` -- number of update steps between two evaluations.
+- `--logging-strat` -- logging strategy.
+- `--logging-steps` -- logging steps.
+- `--save-strat` -- save strategy.
+- `--save-steps` -- save steps.
+- `--save-total-limit` -- # Save only the last n checkpoints at any given time while training.
 - `-lr` -- learning rate.
-- `--optimizer-name` -- optimizer name from `torch.optim`.
-- `-s` -- the index of the split dividing data to train and test.
-- `-bs` -- batch size.
-- `-nd` -- device number (e.g., for "cuda:0" it is 0).
-- `-o` -- logs saving directory 
-- `--alpha` --  coefficient of graph impact (from $0$ to $1$, for images it will be $1 - \alpha$)
-- `--alpha-feat` -- it is $\beta$ impact coefficient for auxiliary features priority.
-- `--path-blind` -- forces the path-blind mode for model if it is set to `True`, otherwise (`False`) will turn on the path-aware mode.
-- `--kfold-filename` -- name of the split file needed to use (specified in the dataset description section).
-- `--city`-- name of the city: "Abakan" or "Omsk".
-- `--graph-layers` -- number of graph convolution layers.
-- `--hidden-size` -- the output size of RegNet and GCN layers. If it is set to $n$,  the input for the transformer encoder will be $2n$ $+$ size of auxiliary features.
-- `--linear-size`  -- size of auxiliary features vector.
-- `--encoder-layers`  -- number of transformer encoder layers.
-- `--fuse-layers` -- number of fine-tuned layers for regression task.
-- `--seq-len` -- the fixed length of transformer sequence. Each trip will be truncated or padded regarding this parameter.
-- `--graph-input-size`  -- the input vector size for the graph convolution layers.
-- `--num-heads` -- number of attention heads in a transformer.
-- `--use-infomax` -- if it is set to 1/0, deep graph infomax will be used/not used. Implementation: https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/models/deep_graph_infomax.html 
+- `-nte` -- num train epochs.
+- `--load-best-model-at-end` -- loads the best model based on the evaluation metric at the end of training.
+- `--report` -- report results to (wandb).
+- `-esp` -- early stopping patience.
+- `--random-state` -- random state.
+- `--num-device` -- index of device.
+- `-expn` -- name of experiment (wandb).
+  
 
+  
 ### Quick test quide
 
 1) Please, install PyTorch and Transformers in your environment;
