@@ -56,6 +56,16 @@ Example for launching on Abakan:
 
 `python test.py --city Abakan --graph-input-size 73 -s 0 --batch-size 16`
 
+### TODO Roadmap
+- ✔️ Adaptive truncation of history
+- ✔️ User settings in inline keyboard
+- ✔️ Thorough token package, usage limit
+- ⏳ Reminder system / user interest tracking
+- ⏳ Non-passive conversation (sending trigger messages from time to time)
+- ⏳ Ability to understand voice messages
+- ⏳ Ability to generate images
+- ⏳ Ability to answer with voice messages
+
 # Contact me
 
 If you have some questions about the code, you are welcome to open an issue, I will respond to that as soon as possible.
