@@ -30,6 +30,7 @@ You can use the following commands to control the model settings:
 - `--save-steps` -- save steps.
 - `--save-total-limit` -- # Save only the last n checkpoints at any given time while training.
 - `-lr` -- learning rate.
+- `-bs` -- batch size on train.
 - `-nte` -- num train epochs.
 - `--load-best-model-at-end` -- loads the best model based on the evaluation metric at the end of training.
 - `--report` -- report results to (wandb).
@@ -38,30 +39,30 @@ You can use the following commands to control the model settings:
 - `--num-device` -- index of device.
 - `-expn` -- name of experiment (wandb).
   
-
-  
 ### Quick test quide
 
-1) Please, install PyTorch and Transformers in your environment;
-2) unzip the dataset;
+1) Please, install PyTorch and other libraries in your environment, you can use *requirements.txt*;
+2) unzip the [dataset](https://drive.google.com/drive/folders/1v4Vs26rlis1L1s4ye0lTMjyW07fXLg9T);
 4) check the paths' constants in `test.py`;
-5) launch test sctipt as `python test.py`, you can choose the training k-fold split via `-s <n>` option, where `n` is the split number.
+5) launch test sctipt as `python test.py`, you can choose the training hyperparameters using argument-parser.
 
 The metrics will appear after test prrocess bieng finished.
 
 Example for launching on Abakan:
 
-`python test.py --city Abakan --graph-input-size 73 -s 0 --batch-size 16`
+`python test.py --model VILT --logging-steps 200 --batch-size 8 -expn vilt_vqa_model`
 
 ### TODO Roadmap
-- ✔️ Adaptive truncation of history
-- ✔️ User settings in inline keyboard
-- ✔️ Thorough token package, usage limit
-- ⏳ Reminder system / user interest tracking
-- ⏳ Non-passive conversation (sending trigger messages from time to time)
-- ⏳ Ability to understand voice messages
-- ⏳ Ability to generate images
-- ⏳ Ability to answer with voice messages
+- ✔️ Data processing and EDA
+- ✔️ Training module
+- ✔️ Inference module, metrcis - ROUGE, F1, Accuracy
+- ✔️ Fine-tuned [VILT](https://arxiv.org/abs/2102.03334) model
+- ✔️ Fine-tuned [BLIP](https://arxiv.org/pdf/2201.12086.pdf) model
+- ✔️ Fine-tuned [BLIP2](https://arxiv.org/pdf/2301.12597.pdf) model
+- ✔️ Fine-tuned [ROBERTA](https://arxiv.org/pdf/1907.11692.pdf) + [VIT](https://arxiv.org/pdf/2010.11929.pdf) model
+- ✔️ Fine-tuned [ROBERTA](https://arxiv.org/pdf/1907.11692.pdf) + [DEIT](https://arxiv.org/pdf/2012.12877.pdf) model
+- ⏳ Fine-tune [LLAVA](https://github.com/haotian-liu/LLaVA/tree/main) model 
+- ⏳ Fine-tune [KOSMOS-2](https://arxiv.org/pdf/2306.14824.pdf) model
 
 # Contact me
 
