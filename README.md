@@ -28,7 +28,7 @@ You can use the following commands to control the model settings:
 - `--logging-steps` -- logging steps.
 - `--save-strat` -- save strategy.
 - `--save-steps` -- save steps.
-- `--save-total-limit` -- # Save only the last n checkpoints at any given time while training.
+- `--save-total-limit` -- save only the last n checkpoints at any given time while training.
 - `-lr` -- learning rate.
 - `-bs` -- batch size on train.
 - `-nte` -- num train epochs.
