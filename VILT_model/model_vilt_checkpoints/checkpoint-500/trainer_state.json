@@ -1,0 +1,30 @@
+{
+  "best_metric": 1.362107515335083,
+  "best_model_checkpoint": "/home/jovyan/ars/vqa-research/VQA/VILT_model/model_vilt_checkpoints/checkpoint-500",
+  "epoch": 0.5181347150259067,
+  "global_step": 500,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.52,
+      "learning_rate": 4.740932642487047e-05,
+      "loss": 1.3823,
+      "step": 500
+    },
+    {
+      "epoch": 0.52,
+      "eval_loss": 1.362107515335083,
+      "eval_runtime": 332.0484,
+      "eval_samples_per_second": 9.962,
+      "eval_steps_per_second": 0.623,
+      "step": 500
+    }
+  ],
+  "max_steps": 9650,
+  "num_train_epochs": 10,
+  "total_flos": 65720077212096.0,
+  "trial_name": null,
+  "trial_params": null
+}

@@ -1,0 +1,5 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type dict that is 147568 bytes
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type dict that is 147568 bytes
+  0%|                                                                                                                    | 0/11030 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+
