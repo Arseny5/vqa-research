@@ -50,7 +50,7 @@ The metrics will appear after test prrocess bieng finished.
 
 Example for launching with VILT model:
 
-`python test.py --model VILT --logging-steps 200 --batch-size 8 -expn vilt_vqa_model`
+`python vilt_trainer.py --logging-steps 200 --batch-size 8 -expn vilt_vqa_model`
 
 ### Links
 
