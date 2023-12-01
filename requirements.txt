@@ -1,0 +1,10 @@
+numpy==1.26.0
+torch==2.0.0
+torchvision==0.15.1
+transformers==4.34.0
+pandas==2.1.1
+jupyter==1.0.0
+datasets==2.14.5
+matplotlib==3.8.0
+evaluate==0.4.0
+rouge-metric==1.0.1
