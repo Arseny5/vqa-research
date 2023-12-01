@@ -1,7 +1,7 @@
 # vqa-research
 Binary answer to the question on the image
 
-![image](qa_visual_logo.png)
+![image](vqa_binary.png)
 
 # Prerequisites 
 
