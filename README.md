@@ -52,6 +52,12 @@ Example for launching with VILT model:
 
 `python test.py --model VILT --logging-steps 200 --batch-size 8 -expn vilt_vqa_model`
 
+### Quick test quide
+
+You can find weights for the model (VILT) [here](https://drive.google.com/drive/folders/1fZ-AcjHS6ZtYWE3n5_JevlJyQ0ScNvCA?usp=share_link)
+
+More information you can find in this [presentation](https://drive.google.com/file/d/1Bs0qFkc0SlADqIx9-I8iydF3warbCUnt/view?usp=share_link)
+
 ### TODO Roadmap
 - ✔️ Data processing and EDA
 - ✔️ Training module
