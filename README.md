@@ -58,7 +58,6 @@ Example for launching with VILT model:
 - ✔️ Inference module, metrics - ROUGE, F1, Accuracy
 - ✔️ Fine-tuned [VILT](https://arxiv.org/abs/2102.03334) model
 - ✔️ Fine-tuned [BLIP](https://arxiv.org/pdf/2201.12086.pdf) model
-- ✔️ Fine-tuned [BLIP2](https://arxiv.org/pdf/2301.12597.pdf) model
 - ✔️ Fine-tuned [ROBERTA](https://arxiv.org/pdf/1907.11692.pdf) + [VIT](https://arxiv.org/pdf/2010.11929.pdf) model
 - ✔️ Fine-tuned [ROBERTA](https://arxiv.org/pdf/1907.11692.pdf) + [DEIT](https://arxiv.org/pdf/2012.12877.pdf) model
 - ⏳ Fine-tune [LLAVA](https://github.com/haotian-liu/LLaVA/tree/main) model 
